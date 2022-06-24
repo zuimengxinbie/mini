@@ -1,0 +1,86 @@
+			<cu-custom bgColor="bg-mauve" isBack="{{true}}">
+				<view slot="backText">返回</view>
+				<view slot="content">职业技能</view>
+			</cu-custom>
+			<view class="padding text-center  intro-skill">
+				<view class="padding-xl radius shadow bg-white main-intro">
+					<view class="cu-bar bg-white margin-top">
+						<view class="action">
+							<text class="cuIcon-title text-yellow"></text>
+							前端技能
+						</view>
+					</view>
+					<view class="padding bg-white">熟悉JavaScript基础，了解TypeScript类型系统</view>
+					<view class="padding bg-white">熟悉组件化开发，擅长使用Vue及相关生态；能够简单使用React，JSX等技术</view>
+					<view class="padding bg-white">熟悉微信/百度小程序开发，善于使用原生技术栈，有优质项目开发经验</view>
+					<view class="padding bg-white">了解前端工程化以及Webpack打包构建与优化</view>
+					<view class="padding bg-white">熟练使用Git项目管理工具</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-blue"></text>
+					Vue
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-blue" style="width:{{loading?'80%':''}};">80%</view>
+				</view>
+			</view>
+      <view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-mauve"></text>
+					小程序开发
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-mauve" style="width:{{loading?'65%':''}};">60%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-orange"></text>
+					React
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-orange" style="width:{{loading?'40%':''}};">40%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-yellow"></text>
+					HTML /CSS /jQuery /JavaScript
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-yellow" style="width:{{loading?'70%':''}};">70%</view>
+				</view>
+			</view>
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-olive"></text>
+					TypeScript
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-olive" style="width:{{loading?'65%':''}};">60%</view>
+				</view>
+			</view>
+
+			<view class="cu-bar bg-white  margin-top">
+				<view class="action">
+					<text class="cuIcon-title text-cyan"></text>
+					Git / SVN
+				</view>
+			</view>
+			<view class="padding bg-white">
+				<view class="cu-progress round striped active">
+					<view class="bg-cyan" style="width:{{loading?'70%':''}};">70%</view>
+				</view>
+			</view>

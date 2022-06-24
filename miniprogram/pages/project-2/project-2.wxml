@@ -1,0 +1,66 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">齐装网小程序</view>
+</cu-custom>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				技术架构
+			</view>
+		</view>
+		<view class="padding bg-white">前端技术架构：原生小程序基础框架，工具微信开发者工具</view>
+		​ <view class="padding bg-white">后端语言：php</view>
+	</view>
+</view>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				项目描述
+			</view>
+		</view>
+    <view class="padding bg-white">为装修业主提供权威装修知识，体验专业装修服务。涉及装修资讯，房产建筑，装修报价/比价，装修服务等类目</view>
+	</view>
+</view>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				主要工作
+			</view>
+		</view>
+		<view class="padding bg-white text-black">版本迭代，平台流量扶持业务支持，性能指标观测跟进：</view>
+		<view class="padding bg-white text-sm">1. 配合产品经理和UI设计师，研究并改善用户体验</view>
+		<view class="padding bg-white text-sm">2. 持续关注小程序API升级和能力更新，并正对性的对业务项目做出相应提升和优化</view>
+		<view class="padding bg-white text-sm">3. 充分解读小程序平台指标，从内容质量、性能稳定性、违规行为着手性能优化</view>
+		<view class="padding bg-white text-black">小程序体积/内容质量提升：</view>
+		<view class="padding bg-white text-sm">1. 统筹icon图标，避免多图一用</view>
+		<view class="padding bg-white text-sm">2. 避免JS异常、避免网络请求异常、废弃接口及时移除、及时回收定时器、避免setData数据冗余、合理设置最低基础库版本</view>
+		<view class="padding bg-white text-sm">3. 合理使用套壳页面</view>
+		<view class="padding bg-white text-black">性能秒开最佳实践：</view>
+		<view class="padding bg-white text-sm">1. 合理使用分包技术</view>
+		<view class="padding bg-white text-sm">2. 避免在App.onLaunch中执行耗时很长的业务</view>
+		<view class="padding bg-white text-sm">3. 高频页面使用骨架屏，分屏渲染</view>
+		<view class="padding bg-white text-sm">4. 主包体积严格把控，减少自定义组件，优化公共资源</view>
+	</view>
+</view>
+<block wx:for="{{dataList}}" wx:key="key">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<block wx:for="{{item.descriptionList}}" wx:for-item="desc" wx:key="key">
+			<view class="padding bg-white">
+				<text class=" text-blue" style="font-size:15px">
+				{{desc}}
+				</text>
+			</view>
+		</block>
+	</view>
+	<view class="margin-top padding  shadow intro-project">
+		<ng-container wx:for="{{item.imageUrlList}}" wx:for-item="imageUrl" wx:key="key">
+			<image bind:tap="clickImg" src="{{imageUrl}}" mode="widthFix" data-url="{{imageUrl}}" class="img" />
+		</ng-container>
+	</view>
+</block>

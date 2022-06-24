@@ -1,0 +1,68 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">齐装网数据驾驶舱</view>
+</cu-custom>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				技术架构
+			</view>
+		</view>
+		<view class="padding bg-white">前端技术架构：Vue，Element-UI，ECharts，工具VScode</view>
+		<view class="padding bg-white">后端语言：php、java</view>
+	</view>
+</view>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				项目描述
+			</view>
+		</view>
+		<view class="padding bg-white">数据可视化平台，主要以绘制数据报表以及大屏数据展示。通过观测各种报表，实时掌握最新数据，专注我司订单业务，保证市场营销计划完成。</view>
+	</view>
+</view>
+<view class="padding text-center  intro-skill">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<view class="cu-bar bg-white  margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-red"></text>
+				主要工作
+			</view>
+		</view>
+		<view class="padding bg-white text-black">可视化看板建设，引入个性化定制的数据可视化图表：</view>
+		<view class="padding bg-white text-sm">1. 基于ECharts封装平台风格的图表库，将其复杂JSON配置进行包装为易用UI配置</view>
+		<view class="padding bg-white text-sm">2. 实现多主题仪表盘，支持通过图表下钻，模板变量等实现图表联动</view>
+		<view class="padding bg-white text-black">优化Vue CLI默认打包配置，优化打包体积：</view>
+		<view class="padding bg-white text-sm">1. 组件按需引入</view>
+		<view class="padding bg-white text-sm">2. 配置提取公共代码，解决代码冗余；通过mixin分发组件中可复用功能</view>
+		<view class="padding bg-white text-sm">3. 拒绝一些包参与打包，通过CDN方式引入（vue、element-ui、echarts、xlsx、lodash）</view>
+		<view class="padding bg-white text-sm">4. 生产环境关闭source-map调试</view>
+		<view class="padding bg-white text-sm">5. 打包时对打包的文件进行压缩，开启gzip</view>
+		<view class="padding bg-white text-sm">6. 最后实现项目总体积从27M减少至6M，首页加载时长11s优化至4s</view>
+		<view class="padding bg-white text-black">多维度前端性能优化，提升用户体验：</view>
+		<view class="padding bg-white text-sm">1. 优化打包、请求资源数量、路由懒加载、模块合理拆分</view>
+		<view class="padding bg-white text-sm">2. 添加进度条，loading加载页</view>
+		<view class="padding bg-white text-sm">3. 抽取scss样式变量，实现主体动态切换</view>
+		<view class="padding bg-white text-sm">4. 通过插槽拓展一些布局组件，以实现模块定制化处理，风格统一</view>
+	</view>
+</view>
+<block wx:for="{{dataList}}" wx:key="key">
+	<view class="padding-xl radius shadow bg-white main-intro">
+		<block wx:for="{{item.descriptionList}}" wx:for-item="desc">
+			<view class="padding bg-white">
+				<text class=" text-blue" style="font-size:15px">
+				{{desc}}
+				</text>
+			</view>
+		</block>
+	</view>
+	<view class="margin-top padding  shadow intro-project">
+		<ng-container wx:for="{{item.imageUrlList}}" wx:for-item="imageUrl">
+			<image style="width: 100%;" bind:tap="clickImg" src="{{imageUrl}}" mode="widthFix" data-url="{{imageUrl}}" class="img" />
+		</ng-container>
+	</view>
+</block>

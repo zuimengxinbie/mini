@@ -1,0 +1,41 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view> 
+	<view slot="content">工作经历</view>
+</cu-custom>
+<view class="cu-timeline">
+	<view class="cu-item  text-cyan">
+		<view class="content">
+			<view class="title">苏州云网通科技有限公司</view>
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-cyan">工作</view>
+				<view class="cu-tag line-cyan">2019年4月-至今</view>
+			</view>
+			<view class="margin-top">
+				工作内容：
+        <view>1. 参与需求分析，汇总项目可行性研究报告，并制定优先级及排期</view>
+        <view>2. 从用户角度出发补充业务场景，完善相关测试用例，从技术端保证优质的用户体验</view>
+        <view>3. 参与或负责系统前端设计和核心代码编写，提供高内聚，低耦合的组件或模块</view>
+        <view>4. 基于VuePress整理输出团队的开发文档与规范；参与定制后台交互接口，优化联调流程</view>
+        <view>5. 负责项目前端功能的发布上线以及客户反馈问题修复</view>
+        <view>6.持续优化前端体验，优化代码并保持良好兼容性，提升WEB界面的友好和易用</view>
+			</view>
+		</view>
+	</view>
+	<view class="cu-item  text-cyan">
+		<view class="content">
+			<view class="title">乐村淘网络科技有限公司</view>
+			<view class="cu-capsule radius">
+				<view class="cu-tag bg-cyan">工作</view>
+				<view class="cu-tag line-cyan">2018年10月-2019年4月</view>
+			</view>
+			<view class="margin-top">
+				工作内容：
+        <view>1. 参与公司各项目中的Web前端功能设计、开发和实现</view>
+        <view>2. 完成UI设计师交接项目的设计稿，配合UI设计完成前端界面优化</view>
+        <view>3. 实现JS交互效果，保证交互效果的流程及浏览器兼容性，以及协助解决项目中的前端问题</view>
+        <view>4. 小程序的开发、维护、迭代</view>
+        <view>5. 参与测试，新技术预研和应用</view>
+			</view>
+		</view>
+	</view>
+</view>
